@@ -1,0 +1,71 @@
+body{
+    background:#111;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial;
+}
+
+.tarjeta{
+    background:#2e2e2e;
+    color:white;
+    width:420px;
+    padding:30px;
+    border-radius:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.informacion h1{
+    font-size:60px;
+    margin:0;
+}
+
+.informacion h2{
+    margin:5px 0 15px 0;
+    font-weight:normal;
+    color:#ccc;
+}
+
+.estados{
+    display:flex;
+    gap:10px;
+}
+
+.crecimiento{
+    color:#3ddc84;
+}
+
+.mes{
+    color:#aaa;
+}
+
+.icono{
+    background:#5a3d26;
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.mensaje{
+    width:40px;
+    height:30px;
+    background:#ff8c3a;
+    border-radius:6px;
+    position:relative;
+}
+.mensaje::after{
+    content:"";
+    position:absolute;
+    bottom:-8px;
+    left:8px;
+    width:0;
+    height:0;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    border-top:8px solid #ff8c3a;
+}
